@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["es2017", "DOM"],
+    "allowJs": true,
+    "jsx": "react-native",
+    "noEmit": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": "./src/",
+    "paths": {
+      "@api/*": ["store/*"],
+      "@store/*": ["store/*"],
+      "@assets/*": ["assets/*"],
+      "@screens/*": ["screens/*"],
+      "@typings/*": ["typings/*"],
+      "@library/*": ["library/*"],
+      "@navigation/*": ["navigation/*"],
+      "@components/*": ["components/*"]
+    },
+    "typeRoots": ["node_modules/@types"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": false
+  },
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js"]
+}
